@@ -72,10 +72,6 @@ terraform_variable_names = [
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
-# Log to Stdout
-streamHandler = logging.StreamHandler(sys.stdout)
-logger.addHandler(streamHandler)
-
 # Test event JSON
 event = {
     "version": "0",
@@ -393,4 +389,9 @@ def lambda_handler(event, context):
 
 
 if __name__ == "__main__":
+    # Log to Stdout if running locally
+    streamHandler = logging.StreamHandler(sys.stdout)
+    logger.addHandler(streamHandler)
+
+    # Call main
     main()
