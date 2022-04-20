@@ -1,0 +1,12 @@
+# Swap files
+*.sw[ponm]
+
+# Compiled Python bytecode
+*.py[cod]
+
+# Log files
+*.log
+
+
+# Workspace files
+*.code-workspace
