@@ -5,7 +5,7 @@ Library used to interact with the Terraform APIs
 """
 
 import json
-from botocore.vendored import requests      # Required to run in Lambda
+import requests
 import logging
 import sys
 
