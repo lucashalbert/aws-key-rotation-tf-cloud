@@ -231,7 +231,7 @@ def parse_env_vars():
 
     # Desired Key Resolution
     if os.environ.get("DESIRED_KEY_RESOLUTION"):
-        global desired_key_aged
+        global desired_key_resolution
         desired_key_resolution = os.environ.get("DESIRED_KEY_RESOLUTION")
 
     # SSM Region
